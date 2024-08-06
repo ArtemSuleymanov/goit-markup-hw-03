@@ -19,6 +19,20 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .container { 
   max-width: 1158px;
   padding: 0 15px;
@@ -105,24 +119,39 @@ color: #434455;
 }
 /* #end region header*/
 .hero {
-    background-color: #2e2f42;
+  background-color: #2e2f42;
 }
+
+.hero-container{
+  padding: 188px 0;
+}
+
 .hero-title {
-    font-weight: 700;
+  max-width: 496px;
 font-size: 56px;
 line-height: 1.07;
 letter-spacing: 0.02em;
 text-align: center;
 color: #fff;
+margin: 0 auto;
+margin-bottom: 48px;
+text-align: center;
 }
 .hero-btn {
-    font-weight: 500;
+  
+  border: none;
+  display: block;
+  margin: 0 auto;
+  font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: 0.04em;
 color: #fff;
 background: #4d5ae5;
 cursor: pointer;
+border-radius: 4px;
+min-width: 169px;
+padding: 16px 32px;
 }
 
 .hero-btn:hover,
@@ -133,12 +162,25 @@ cursor: pointer;
 .features {
 
 }
+.features-container{
+  width: calc(100% - 72) / 4;
+  min-width: 1128px;
+  height: 104px;
+  margin-top: 120px;
+  margin-bottom: 120px;
+  margin-right: 156px;
+  margin-left: 156px;
+}
 .benefits{
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+}
+.features-title{
+  display: flex;
+  gap: 24px;
 }
 .features-list {
 }
@@ -159,6 +201,18 @@ color: #434455;
 
 .team {
   background: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+}
+.team-container{
+  display: flex;
+  align-items: center;
+  width: 1440px;
+height: 732px;
+}
+.team-ul{
+  display: flex;
 }
 .team-title {
   font-weight: 700;
