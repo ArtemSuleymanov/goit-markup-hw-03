@@ -185,6 +185,7 @@ padding: 16px 32px;
   gap: 24px;
 }
 .features-list {
+  width: calc((100% - 72px) / 4);
 }
 .features-name {
   font-weight: 500;
@@ -192,6 +193,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 .features-text {
   font-weight: 400;
@@ -203,13 +205,14 @@ color: #434455;
 
 .team {
   background: #f4f4fd;
-  height: 732px;
+  padding: 120px 0;
 }
 .team-container{
-  display: flex;
-  align-items: center;
-  width: 1440px;
-height: 732px;
+  max-width: 1158px;
+  padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+  margin-right: auto;
 }
 .team-ul{
   display: flex;
@@ -308,6 +311,7 @@ font-size: 20px;
 line-height: 1.2;
 letter-spacing: 0.02em;
 color: #2e2f42;
+margin-bottom: 8px;
 }
 .portfolio-type {
   font-weight: 400;
