@@ -202,13 +202,7 @@ color: #434455;
   background: #f4f4fd;
   padding: 120px 0;
 }
-.team-container{
-  max-width: 1158px;
-  padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-  margin-right: auto;
-}
+
 .team-ul{
   display: flex;
   gap: 24px;
